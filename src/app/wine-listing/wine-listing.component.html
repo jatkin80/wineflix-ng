@@ -1,4 +1,6 @@
-<div class="wine-listing">
-  <img src="{{linkImg}}" />
-  <span class="new-badge">New!</span>
-</div>
+
+  <div class="wine">
+    <img src="{{linkImg}}" alt="{{wineName}}" />
+    <span *ngIf="isNew" class="new-badge">New!</span>
+  </div>
+

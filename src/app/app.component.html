@@ -7,65 +7,26 @@
         <app-nav [homeUrl]="'https://developer.mozilla.org'" [whitesUrl]="'https://developer.mozilla.org'"
           [redsUrl]="'https://developer.mozilla.org'" [blendsUrl]="'https://developer.mozilla.org'"></app-nav>
       </section>
-  <app-user-avatar
-  [avatarUrl]="'https://developer.mozilla.org'"></app-user-avatar>
+      <app-user-avatar [avatarUrl]="'https://developer.mozilla.org'"></app-user-avatar>
     </nav>
     <div class="hero-content">
-<app-hero-one>
-[heroImg]="'/assets/rex-goliath-logo.png'"
-</app-hero-one>
-<app-hero-two
-></app-hero-two>
+      <app-hero-one>
+        [heroImg]="'/assets/rex-goliath-logo.png'"
+      </app-hero-one>
+      <app-hero-two></app-hero-two>
     </div>
   </header>
   <main>
-    <section class="wine-listing">
+    <section class="category">
       <h2>Drink Again</h2>
       <ul>
-        <li>
-          <div class="wine-listing">
-            <app-wine-listing [linkImg]="'/assets/red-wine.jpg'">
-              <span class="new-badge">New!</span>
-            </app-wine-listing>
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-            <span class="new-badge">New!</span>
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-            <span class="new-badge">New!</span>
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-          </div>
-        </li>
+        <li *ngFor="let wine of wines">
+          <app-wine-listing
+        [isNew]="wine.isNew"
+        [linkImg]="wine.linkImg"
+        [wineName]="wine.wineName"
+        ></app-wine-listing>
+      </li>
       </ul>
     </section>
     <section class="category">

@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./wine-listing.component.css']
 })
 export class WineListingComponent {
-@Input() linkImg =""
-
+@Input() linkImg!: string;
+@Input() isNew?=false;
+@Input() wineName!:string;
 }
