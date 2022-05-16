@@ -32,69 +32,10 @@
     <section class="category">
       <h2>Keep Drinking</h2>
       <ul>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-            <div class="amount-consumed">
-              <progress min="0" max="100" value="22"></progress>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-            <div class="amount-consumed">
-              <progress min="0" max="100" value="22"></progress>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-            <div class="amount-consumed">
-              <progress min="0" max="100" value="22"></progress>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-            <div class="amount-consumed">
-              <progress min="0" max="100" value="22"></progress>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-            <div class="amount-consumed">
-              <progress min="0" max="100" value="22"></progress>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-            <div class="amount-consumed">
-              <progress min="0" max="100" value="22"></progress>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-            <div class="amount-consumed">
-              <progress min="0" max="100" value="22"></progress>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="wine">
-            <img src="/assets/red-wine.jpg" alt="Wine" />
-            <div class="amount-consumed">
-              <progress min="0" max="100" value="22"></progress>
-            </div>
-          </div>
+        <li *ngFor="let consumedWine of consumedWines"><app-consumed-wine
+          [linkImg]="consumedWine.linkImg"
+          [wineName]="consumedWine.wineName"
+          [amount]="consumedWine.amount"></app-consumed-wine>
         </li>
       </ul>
     </section>

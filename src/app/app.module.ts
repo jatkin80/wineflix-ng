@@ -11,6 +11,7 @@ import { UserAvatarComponent } from './user-avatar/user-avatar.component';
 import { HeroContentComponent } from './hero-content/hero-content.component';
 import { HeroOneComponent } from './hero-one/hero-one.component';
 import { HeroTwoComponent } from './hero-two/hero-two.component';
+import { ConsumedWineComponent } from './consumed-wine/consumed-wine.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HeroTwoComponent } from './hero-two/hero-two.component';
     UserAvatarComponent,
     HeroContentComponent,
     HeroOneComponent,
-    HeroTwoComponent
+    HeroTwoComponent,
+    ConsumedWineComponent
   ],
   imports: [
     BrowserModule,
