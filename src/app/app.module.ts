@@ -8,6 +8,9 @@ import { WineListingComponent } from './wine-listing/wine-listing.component';
 import { LogoComponent } from './logo/logo.component';
 import { NavComponent } from './nav/nav.component';
 import { UserAvatarComponent } from './user-avatar/user-avatar.component';
+import { HeroContentComponent } from './hero-content/hero-content.component';
+import { HeroOneComponent } from './hero-one/hero-one.component';
+import { HeroTwoComponent } from './hero-two/hero-two.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { UserAvatarComponent } from './user-avatar/user-avatar.component';
     WineListingComponent,
     LogoComponent,
     NavComponent,
-    UserAvatarComponent
+    UserAvatarComponent,
+    HeroContentComponent,
+    HeroOneComponent,
+    HeroTwoComponent
   ],
   imports: [
     BrowserModule,
