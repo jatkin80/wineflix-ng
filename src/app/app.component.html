@@ -10,9 +10,7 @@
       <app-user-avatar [avatarUrl]="'https://developer.mozilla.org'"></app-user-avatar>
     </nav>
     <div class="hero-content">
-      <app-hero-one>
-        [heroImg]="'/assets/rex-goliath-logo.png'"
-      </app-hero-one>
+      <app-hero-one [heroImg]="heroImg"></app-hero-one>
       <app-hero-two></app-hero-two>
     </div>
   </header>
@@ -21,21 +19,16 @@
       <h2>Drink Again</h2>
       <ul>
         <li *ngFor="let wine of wines">
-          <app-wine-listing
-        [isNew]="wine.isNew"
-        [linkImg]="wine.linkImg"
-        [wineName]="wine.wineName"
-        ></app-wine-listing>
-      </li>
+          <app-wine-listing [isNew]="wine.isNew" [linkImg]="wine.linkImg" [wineName]="wine.wineName"></app-wine-listing>
+        </li>
       </ul>
     </section>
     <section class="category">
       <h2>Keep Drinking</h2>
       <ul>
-        <li *ngFor="let consumedWine of consumedWines"><app-consumed-wine
-          [linkImg]="consumedWine.linkImg"
-          [wineName]="consumedWine.wineName"
-          [amount]="consumedWine.amount"></app-consumed-wine>
+        <li *ngFor="let consumedWine of consumedWines">
+          <app-consumed-wine [linkImg]="consumedWine.linkImg" [wineName]="consumedWine.wineName"
+            [amount]="consumedWine.amount"></app-consumed-wine>
         </li>
       </ul>
     </section>

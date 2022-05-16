@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ConsumedWineComponent } from './consumed-wine.component';
 
 describe('ConsumedWineComponent', () => {
@@ -8,9 +7,8 @@ describe('ConsumedWineComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ConsumedWineComponent ]
-    })
-    .compileComponents();
+      declarations: [ConsumedWineComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

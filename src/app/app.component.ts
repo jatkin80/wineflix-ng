@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { faPlay, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -58,41 +56,38 @@ export class AppComponent {
     {
       linkImg: '/assets/red-wine.jpg',
       wineName: 'wine',
-      amount: 22,
+      amount: 46,
     },
     {
       linkImg: '/assets/red-wine.jpg',
       wineName: 'wine',
-      amount: 22,
+      amount: 75,
     },
     {
       linkImg: '/assets/red-wine.jpg',
       wineName: 'wine',
-      amount: 22,
+      amount: 90,
     },
     {
       linkImg: '/assets/red-wine.jpg',
       wineName: 'wine',
-      amount: 22,
+      amount: 36,
     },
     {
       linkImg: '/assets/red-wine.jpg',
       wineName: 'wine',
-      amount: 22,
+      amount: 40,
     },
     {
       linkImg: '/assets/red-wine.jpg',
       wineName: 'wine',
-      amount: 22,
+      amount: 60,
     },
     {
       linkImg: '/assets/red-wine.jpg',
       wineName: 'wine',
-      amount: 22,
+      amount: 100,
     },
   ];
-
-  faPlay = faPlay;
-  faInfoCircle = faInfoCircle;
-  title = 'angular-template';
+  heroImg = '/assets/rex-goliath-logo.png';
 }
