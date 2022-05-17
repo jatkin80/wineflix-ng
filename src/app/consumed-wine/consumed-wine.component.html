@@ -4,10 +4,10 @@
     <li *ngFor="let wine of wines">
       <div *ngIf="!wine.isFinished" class="wine">
         <img *ngIf="!wine.isFinished" src="{{wine.linkImg}}" alt="{{wine.wineName}}" />
-  <div class="amount-consumed">
-    <progress min="0" max="100" value="{{wine.progress}}"></progress>
-  </div>
-</div>
-</li>
+        <div class="amount-consumed">
+          <progress min="0" max="100" value="{{wine.progress}}"></progress>
+        </div>
+      </div>
+    </li>
   </ul>
 </section>

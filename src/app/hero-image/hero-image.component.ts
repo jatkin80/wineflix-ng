@@ -1,11 +1,10 @@
-import { Component, Input} from '@angular/core';
-import {heroContent} from "../../data"
-
+import { Component, Input } from '@angular/core';
+import { heroContent } from '../../data';
 @Component({
   selector: 'app-hero-image',
   templateUrl: './hero-image.component.html',
-  styleUrls: ['./hero-image.component.css']
+  styleUrls: ['./hero-image.component.css'],
 })
 export class HeroImageComponent {
-heroContent=heroContent;
+  heroContent = heroContent;
 }
