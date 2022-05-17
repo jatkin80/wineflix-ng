@@ -12,6 +12,10 @@ import { HeroContentComponent } from './hero-content/hero-content.component';
 import { HeroOneComponent } from './hero-one/hero-one.component';
 import { HeroTwoComponent } from './hero-two/hero-two.component';
 import { ConsumedWineComponent } from './consumed-wine/consumed-wine.component';
+import { HeroImageComponent } from './hero-image/hero-image.component';
+import { HeaderNavComponent } from './header-nav/header-nav.component';
+import { FullHeaderComponent } from './full-header/full-header.component';
+import { MainSectionComponent } from './main-section/main-section.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { ConsumedWineComponent } from './consumed-wine/consumed-wine.component';
     HeroContentComponent,
     HeroOneComponent,
     HeroTwoComponent,
-    ConsumedWineComponent
+    ConsumedWineComponent,
+    HeroImageComponent,
+    HeaderNavComponent,
+    FullHeaderComponent,
+    MainSectionComponent
   ],
   imports: [
     BrowserModule,
