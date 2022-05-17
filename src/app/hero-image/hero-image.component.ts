@@ -1,4 +1,5 @@
 import { Component, Input} from '@angular/core';
+import {heroContent} from "../../data"
 
 @Component({
   selector: 'app-hero-image',
@@ -6,5 +7,5 @@ import { Component, Input} from '@angular/core';
   styleUrls: ['./hero-image.component.css']
 })
 export class HeroImageComponent {
-  @Input() heroImg=""
+heroContent=heroContent;
 }
